@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a67f2621.css",
+    "main.js": "/static/js/main.6a39ac61.js",
+    "static/media/kfc.png": "/static/media/kfc.83080806dd43ae59dafa.png",
+    "static/media/bathandbodyworks.png": "/static/media/bathandbodyworks.9fe3234e914a008f8923.png",
+    "static/media/geekbuying.png": "/static/media/geekbuying.d735aef455e2dc342c7d.png",
+    "static/media/self.png": "/static/media/self.7d1f2b162c1a863fedf6.png",
+    "static/media/Resume.pdf": "/static/media/Resume.930cc9aca41f5d439267.pdf",
+    "static/media/address.png": "/static/media/address.a01cb8cc428702f30bec.png",
+    "static/media/email.png": "/static/media/email.a49e015815e3ac6d2bd3.png",
+    "static/media/phone.png": "/static/media/phone.d90a6d23cf5129d853bb.png",
+    "index.html": "/index.html",
+    "main.a67f2621.css.map": "/static/css/main.a67f2621.css.map",
+    "main.6a39ac61.js.map": "/static/js/main.6a39ac61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a67f2621.css",
+    "static/js/main.6a39ac61.js"
+  ]
+}

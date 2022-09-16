@@ -1,4 +1,7 @@
 import self from '../assets/pngs/self.png';
+import bathandbodyworks from '../assets/pngs/bathandbodyworks.png';
+import geekbuying from '../assets/pngs/geekbuying.png';
+import kfc from '../assets/pngs/kfc.png';
 
 export let colors = ["rgb(204, 255, 20)", "rgb(18, 136, 248)"];
 
@@ -67,36 +70,24 @@ export const info = {
             emoji: '⚽'
         }
     ],
-    portfolio: [ // This is where your portfolio projects will be detailed
+    portfolio: [
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: self
+            title: "GeekBuying Clone",
+            live: "https://geek-buying-clone.netlify.app/", 
+            source: "https://github.com/Randhir200/GeekBuying-CW2", 
+            image: geekbuying
         },
         {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: self
+            title: "KFC Clone",
+            live: "https://enchanted-slave-2236.netlify.app",
+            source: "https://github.com/ShirsoBhattacharyya/enchanted-slave-2236",
+            image: kfc
         },
         {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: self
-        },
-        {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: self
-        },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: self
+            title: "Bath & Body Works Clone",
+            live: "https://bath-and-body-works-clone.netlify.app/",
+            source: "https://github.com/ShirsoBhattacharyya/Bath-BodyWorks-CW1",
+            image: bathandbodyworks
         }
     ]
 }

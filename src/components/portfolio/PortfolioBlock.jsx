@@ -4,7 +4,7 @@ import {Box} from "@mui/material";
 
 const PortfolioBlock = ({image, live, source, title}) => {
   return (
-    <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} width={'600px'}>
+    <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} width={'400px'}>
         <Box component={'img'} src={image} alt={'mockup'} border={'2px solid black'} borderRadius={'25px'}/>
         <br/>
         <h1 style={{fontSize: '2rem'}}>{title}</h1>

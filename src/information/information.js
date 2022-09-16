@@ -49,7 +49,7 @@ export const info = {
         }
 
     ],
-    bio: "Hello! I'm Shirso. I'm a full stack web developer specializing in MERN Stack web frameworks. I studied coding at Masai School, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Shirso. I'm a full stack web developer passionate about MERN Stack web frameworks. I studied coding at Masai School, where I did put in a lot of hard work to understand HTML, CSS, Javascript and MERN technologies like MongoDB, Express, React and Node. I am in this journey for constant improvement and upskilling. Please feel to ping me incase of collabs because every project is a learning experience I cherish wholeheartedly.",
     skills:
         {
             proficientWith: ['javascript','react', 'nodejs','express','mongodb','git', 'github', 'html5', 'css3'],

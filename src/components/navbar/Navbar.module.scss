@@ -2,6 +2,10 @@
 
 nav {
   transition: $transition;
+  background-color: $lightgray;
+  position:fixed;
+  top:0;
+  z-index: 999;
 }
 
 .active {
@@ -15,5 +19,23 @@ li {
   &:hover {
     transform: translateY(-3px);
     transition: $transition;
+  }
+}
+.menu{
+  display:none;
+}
+.options{
+  display:flex;
+  gap:2rem;
+  align-items: center;
+}
+@media all and (max-width:800px){
+  .menu{
+    display:flex;
+    align-items: center;
+    margin-right: -30px;
+  }
+  .options{
+    display:none;
   }
 }

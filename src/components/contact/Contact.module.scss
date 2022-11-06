@@ -1,45 +1,19 @@
-.c {
-    height: 100vh;
-    position: relative;
-  }
-  
-  .cbg {
-    width: 20px;
-    height: 100%;
-    background-color: #59b256;
-    position: absolute;
-  }
-  
-  .cwrapper {
-    padding: 50px;
-    display: flex;
-  }
-  
-  .cleft {
-    flex: 1;
-  }
-  
-  .cright {
-    flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .ctitle {
-    font-size: 60px;
-    width: 80%;
-  }
-  
-  .cinfoitem {
-    display: flex;
-    align-items: center;
-    margin: 50px 0px;
-    font-size:1rem;
-    font-weight: 500;
-    width: 70%;
-  }
+.contacttop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactstrip{
+  display:flex;
+}
+.contactinfoitem {
+  display: flex;
+  align-items: center;
+  font-size:1rem;
+  font-weight: 500;
+  width: 70%;
+}
   
   .cicon {
     width: 30px;
@@ -47,18 +21,13 @@
     margin-right: 20px;
   }
   
-  .cdesc {
-    font-weight: 500;
-    font-size:1rem;
-  }
-  
   form {
     margin-top: 20px;
-    width:700px;
+    width:60%;
   }
   
   input {
-    width: 70%;
+    width:90%;
     height: 50px;
     margin: 10px 0px;
     font-size: 14px;
@@ -67,7 +36,7 @@
   }
   
   textarea {
-    width: 100%;
+    width: 90%;
     margin: 10px 0px;
     font-size: 14px;
     padding: 10px;
@@ -81,39 +50,28 @@
     cursor: pointer;
   }
   
-  @media screen and (max-width: 480px) {
-    .c-wrapper {
+  @media screen and (max-width: 1080px) {
+    .contactwrapper {
       flex-direction: column;
       padding: 0px 50px;
-    }
-  
-    .ctitle {
-      font-size: 30px;
-    }
-  
-    .cinfoitem {
-      margin: 20px 0px;
+    } 
+    .contactinfoitem {
       width: 100%;
     }
-  
-    .cdesc {
-      display: none;
+    input{
+      padding-left: 5px;
+      width:100%;
     }
-  
-    form {
-      margin-top: 0px;
-      display: flex;
-      flex-wrap: wrap;
+    textarea{
+      padding-left: 5px;
+      width:100%;
     }
-  
-    input {
-      width: 35%;
-      height: 40px;
-      margin: 10px;
-      margin-left: 0;
-    }
-  
     button {
       margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .contactstrip{
+      display:none;
     }
   }

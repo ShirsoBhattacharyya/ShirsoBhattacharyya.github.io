@@ -2,10 +2,12 @@
 
 footer {
   color: $dark;
+  width:100%;
 }
 
 .dark {
   background-color: $dark;
+  width:100%;
   color: $white;
   transition: all 400ms;
 
@@ -26,5 +28,6 @@ footer {
 .light {
   background-color: $white;
   color: $dark;
+  width:100%;
   transition: all 400ms;
 }

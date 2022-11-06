@@ -5,6 +5,7 @@ import Address from '../../assets/pngs/address.png';
 import Email from '../../assets/pngs/email.png';
 import Style from './Contact.module.scss';
 import { info } from "../../information/information";
+import {Box} from '@mui/material';
 
 const Contact = () => {
   const formRef = useRef();
@@ -31,49 +32,52 @@ const Contact = () => {
   };
 
   return (
-    <div className={Style.c}>
-      <div className={Style.cbg}></div>
-      <div className={Style.cwrapper}>
-        <div className={Style.cleft}>
-          <h1 className={Style.ctitle}>Contact Me</h1>
-          <div className={Style.cinfo}>
-            <div className={Style.cinfoitem}>
+  <Box positon='relative'>
+      <h1 style={{padding:'4rem 0',textAlign:'center',fontSize:'38px'}}>CONTACT ME :</h1>
+      {/* <Box width='2.5rem' height='60%' top='50' left='0' position='absolute' style={{background:info.gradient, WebkitTextFillColor: 'transparent'}}></Box> */}
+      <Box border='2px solid' borderRadius='25px' padding='2rem 0' margin='4rem'>
+        <Box padding='2rem' display='flex' flexDirection='column' alignItems='center'>
+          <form ref={formRef} onSubmit={handleSubmit} >
+            <Box display='flex' flexWrap='wrap' justifyContent='center'>
+              <p style={{fontWeight:'600',fontSize:'18px'}}>
+                What’s your story? Get in touch. Always available to get to know your contributions as a problem solver.
+              </p>
+            </Box>
+            <br />
+            <Box>
+              <input type="text" placeholder="Name" name="user_name" />
+            </Box>
+            <Box>
+              <input type="text" placeholder="Subject" name="user_subject" />
+            </Box>
+            <Box>
+              <input type="text" placeholder="Email" name="user_email" />
+            </Box>
+            <Box>
+              <textarea rows="4" placeholder="Message" name="message" />
+            </Box>
+            <button style={{padding:"1rem 1.5rem",background:info.gradient}}>Submit</button>
+            {done && "Thanks for contacting"}
+          </form>
+        </Box>
+        {/* <Box display='flex' justifyContent='center' border='2px solid' margin='0 2rem' borderRadius='25px'>
+          <Box display='flex' alignItems='center' padding='1rem 2rem' gap='2rem' justifyContent='center'>
+            <Box className={Style.contactinfoitem}>
               <img src={Phone} alt="" className={Style.cicon} />
               +91 81001 53339
-            </div>
-            <div className={Style.cinfoitem}>
+            </Box>
+            <Box className={Style.contactinfoitem}>
               <img className={Style.cicon} src={Email} alt="" />
               shirso369@gmail.com
-            </div>
-            <div className={Style.cinfoitem}>
+            </Box>
+            <Box className={Style.contactinfoitem}>
               <img className={Style.cicon} src={Address} alt="" />
-              43/1,G.M. Sinha Lane, P.O-Seoraphuli, Dist-Hooghly, State-West Bengal,Pin-712223,Country-India.
-            </div>
-          </div>
-        </div>
-        <div className={Style.cright}>
-          <p className={Style.cdesc}>
-            <b>What’s your story?</b> Get in touch. Always available to get to know your contributions as a problem solver.
-          </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <div>
-              <input type="text" placeholder="Name" name="user_name" />
-            </div>
-            <div>
-              <input type="text" placeholder="Subject" name="user_subject" />
-            </div>
-            <div>
-              <input type="text" placeholder="Email" name="user_email" />
-            </div>
-            <div>
-              <textarea rows="5" placeholder="Message" name="message" />
-            </div>
-            <button style={{padding:"1rem 1.5rem",background:info.gradient}}>Submit</button>
-            {done && "Thank you..."}
-          </form>
-        </div>
-      </div>
-    </div>
+              Hooghly, West Bengal, India.
+            </Box>
+          </Box> 
+        </Box> */}
+      </Box>
+    </Box>
   );
 };
 

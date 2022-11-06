@@ -1,0 +1,15 @@
+.projecticon{
+    display:flex;
+}
+.projectDesc{
+    padding:2rem;
+    font-size:18px;
+}
+@media all and (max-width:480px){
+    .projecticon{
+        display:none
+    }
+    .projectDesc{
+        display:none
+    }
+}

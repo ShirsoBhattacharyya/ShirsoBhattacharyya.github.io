@@ -7,14 +7,14 @@ const About = () => {
   const firstName = info.firstName.toLowerCase();
   const aboutMeText = () => {
     return (
-      <>
-          <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat
+      <Box className='#about'>
+          <p><span style={{color: info.baseColor}}>{firstName} $</span> cat
               about{firstName} </p>
           <p><span style={{color: info.baseColor}}>about{firstName} <span
               className={Style.green}>(main)</span> $ </span>
               {info.bio}
           </p>
-      </>
+      </Box>
     );
   }
   const skillsText = () => {
@@ -38,9 +38,8 @@ const About = () => {
 const miscText = () => {
     return (
       <>
-          <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
-              hobbies/interests</p>
-          <p><span style={{color: info.baseColor}}>hobbies/interests <span
+          <p><span style={{color: info.baseColor}}>{firstName} $</span> cd interests</p>
+          <p><span style={{color: info.baseColor}}>interests <span
               className={Style.green}>(main)</span> $</span> ls</p>
           <ul>
               {info.hobbies.map((hobby, index) => (
@@ -52,8 +51,9 @@ const miscText = () => {
 }
   return (
     <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
+        <h1 style={{padding:'4rem 0',fontSize:'38px'}}>ABOUT ME :</h1>
         <Terminal text={aboutMeText()}/>
-        <Terminal text={skillsText()}/>
+        {/* <Terminal text={skillsText()}/> */}
         <Terminal text={miscText()}/>
     </Box>
   )

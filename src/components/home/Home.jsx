@@ -6,11 +6,10 @@ import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
 import {Box} from "@mui/material";
 import {info} from "../../information/information";
-import Resume from './Resume.pdf';
 
 const Home = () => {
   return (
-    <Box>
+    <Box id='home'>
         <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'row'}} alignItems={'center'} width='100%'
             justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
                <Box className={classNames(Style.avatar, Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={me} width={{xs: '30vh', md: '40vh'}}
@@ -35,7 +34,7 @@ const Home = () => {
         </Box>
         <br/>
         <Box style={{display:'flex',justifyContent:'center',margin:'2.5rem',marginLeft:'-1rem'}}>
-            <button style={{padding:'1rem 1.5rem',borderRadius:'1.5rem',fontSize:'1rem',background:info.gradient,fontWeight:'500',cursor:'pointer'}}><a href={Resume} download><p style={{color:'black'}}>Download Resume</p></a></button>
+            <button style={{padding:'1rem 1.5rem',borderRadius:'1.5rem',fontSize:'1rem',background:info.gradient,fontWeight:'500',cursor:'pointer'}}><a href={'https://drive.google.com/file/d/1SejhiySssjkCn37TfIwxQ_MO5w-huHNG/view?usp=sharing'} target='_blank' rel="noreferrer"><p style={{color:'black'}}>Download Resume</p></a></button>
         </Box>
     </Box>
   )

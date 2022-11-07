@@ -1,45 +1,45 @@
 import React, {useState} from 'react';
 import Style from './Navbar.module.scss';
 import Toggler from "../home/Toggler";
-import {Link} from "react-router-dom";
 import {Box, Button, ListItem, ListItemText} from "@mui/material";
 import {info} from "../../information/information";
 import SocialIcon from '../home/SocialIcon';
 import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import CloseIcon from "@mui/icons-material/Close";
+import {Link} from 'react-scroll';
 
 
 
 const links = [
   {
       name: 'Home',
-      to: '#',
+      to: '/',
       active: 'home'
   },
   {
       name: 'About Me',
-      to: '#about',
+      to: '/about',
       active: 'about'
   },
   {
       name: 'Skills',
-      to: '#skills',
+      to: '/skills',
       active: 'skills'
   },
   {
       name: 'Projects',
-      to: '#projects',
+      to: '/projects',
       active: 'projects'
   },
   {
       name: 'Contact',
-      to:'#contact',
+      to:'/contact',
       active: 'contact'
   },
   {
     name:'Resume',
-    to:'#resume',
+    to:'/resume',
     active:'resume'
   }
 ]
@@ -64,13 +64,16 @@ const Navbar = ({darkMode, handleClick}) => {
                 fontSize={'1rem'}>
                 <Box className={Style.options}>
                 {links.map((link, index) => (
+                    link.active==='resume' ?
+                    <a href={'https://drive.google.com/file/d/1SejhiySssjkCn37TfIwxQ_MO5w-huHNG/view?usp=sharing'} target='_blank' rel="noreferrer" style={{paddingBottom: '0.5rem',color:'black',cursor:'pointer',textDecoration:'none'}}>Resume</a>
+                    :
                     <Box key={index} component={'li'}
                          sx={{borderImageSource: info.gradient}}
                          >
-                        <Link to={link.to}>
-                            {!link.type && <p style={{paddingBottom: '0.5rem',color:'black'}}>{link.name}</p>}
-                            {link.type && <h1>{link.name}</h1>}
-                        </Link>
+                            <Link to={link.active} smooth={true} duration={1000} spy={true} offset={-100} activeClass={Style.active}>
+                                {!link.type && <p style={{paddingBottom: '0.5rem',color:'black',cursor:'pointer'}}>{link.name}</p>}
+                                {link.type && <h1>{link.name}</h1>}
+                            </Link>
                     </Box>
                 ))}
                 </Box>
@@ -85,33 +88,45 @@ const Navbar = ({darkMode, handleClick}) => {
                                     <CloseIcon onClick={toggleDrawer(false)}/>
                                 </ListItem>
                                 <ListItem>
-                                    <Box padding='1rem 2rem' border='2px solid'  width='140px' height='60px' borderRadius='25px'>
-                                        <ListItemText primary='Home'/>
+                                    <Box padding='1rem 2rem' border='2px solid'  width='140px' height='60px' borderRadius='25px' cursor='pointer'>
+                                        <Link to='home' onClick={toggleDrawer(false)} smooth={true} duration={1000} spy={true} offset={-100} activeClass={Style.active}>
+                                            <ListItemText primary='Home'/>
+                                        </Link>
                                     </Box>
                                 </ListItem>
                                 <ListItem>
-                                    <Box padding='1rem 2rem' border='2px solid'  width='140px' height='60px' borderRadius='25px'>
-                                        <ListItemText primary='About Me'/>
+                                    <Box padding='1rem 2rem' border='2px solid'  width='140px' height='60px' borderRadius='25px' cursor='pointer'>
+                                        <Link to='about' onClick={toggleDrawer(false)} smooth={true} duration={1000} spy={true} offset={-100} activeClass={Style.active}>
+                                            <ListItemText primary='About Me'/>
+                                        </Link>
                                     </Box>
                                 </ListItem>
                                 <ListItem>
-                                    <Box padding='1rem 2rem' border='2px solid'  width='140px' height='60px' borderRadius='25px'>
-                                        <ListItemText primary='Skills'/>
+                                    <Box padding='1rem 2rem' border='2px solid'  width='140px' height='60px' borderRadius='25px' cursor='pointer'>
+                                        <Link to='skills' onClick={toggleDrawer(false)} smooth={true} duration={1000} spy={true} offset={-100} activeClass={Style.active}>
+                                            <ListItemText primary='Skills'/>
+                                        </Link>
                                     </Box>
                                 </ListItem>
                                 <ListItem>
-                                    <Box padding='1rem 2rem' border='2px solid' width='140px' height='60px' borderRadius='25px'>
-                                        <ListItemText primary='Projects'/>
+                                    <Box padding='1rem 2rem' border='2px solid' width='140px' height='60px' borderRadius='25px' cursor='pointer'>
+                                        <Link to='projects' onClick={toggleDrawer(false)} smooth={true} duration={1000} spy={true} offset={-100} activeClass={Style.active}>
+                                            <ListItemText primary='Projects'/>
+                                        </Link>
                                     </Box>    
                                 </ListItem>
                                 <ListItem>
-                                    <Box padding='1rem 2rem' border='2px solid' width='140px' height='60px' borderRadius='25px'>
-                                        <ListItemText primary='Contact'/>
+                                    <Box padding='1rem 2rem' border='2px solid' width='140px' height='60px' borderRadius='25px' cursor='pointer'>
+                                        <Link to='contact' onClick={toggleDrawer(false)} smooth={true} duration={1000} spy={true} offset={-100} activeClass={Style.active}>
+                                            <ListItemText primary='Contact'/>
+                                        </Link>
                                     </Box>
                                 </ListItem>
                                 <ListItem>
-                                    <Box padding='1rem 2rem' border='2px solid' width='140px' height='60px' borderRadius='25px'>
-                                        <ListItemText primary='Resume'/>
+                                    <Box padding='1rem 2rem' border='2px solid' width='140px' height='60px' borderRadius='25px' cursor='pointer'>
+                                        <a href={'https://drive.google.com/file/d/1SejhiySssjkCn37TfIwxQ_MO5w-huHNG/view?usp=sharing'}  onClick={toggleDrawer(false)} target='_blank' rel="noreferrer">
+                                            <ListItemText primary='Resume'/>
+                                        </a>
                                     </Box>
                                 </ListItem> 
                             </Box>

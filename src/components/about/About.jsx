@@ -50,7 +50,7 @@ const miscText = () => {
     );
 }
   return (
-    <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
+    <Box id='about' display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
         <h1 style={{padding:'4rem 0',fontSize:'38px'}}>ABOUT ME :</h1>
         <Terminal text={aboutMeText()}/>
         {/* <Terminal text={skillsText()}/> */}

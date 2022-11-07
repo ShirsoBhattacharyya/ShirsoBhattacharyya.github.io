@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-  <Box positon='relative'>
+  <Box id='contact' positon='relative'>
       <h1 style={{padding:'4rem 0',textAlign:'center',fontSize:'38px'}}>CONTACT ME :</h1>
       {/* <Box width='2.5rem' height='60%' top='50' left='0' position='absolute' style={{background:info.gradient, WebkitTextFillColor: 'transparent'}}></Box> */}
       <Box border='2px solid' borderRadius='25px' padding='2rem 0' margin='4rem'>

@@ -5,7 +5,7 @@ import {info} from "../../information/information";
 
 const Portfolio = () => {
   return (
-    <Box>
+    <Box id='projects'>
         <h1 style={{padding:'4rem 0',textAlign:'center',fontSize:'38px'}}>PROJECTS :</h1>
         <Box display={'flex'} alignItems={'center'} justifyContent='center' flexWrap='wrap'>
                 {info.portfolio.map((project, index) => (

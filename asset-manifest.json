@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.1946e6ed.css",
-    "main.js": "/static/js/main.d8047f3b.js",
+    "main.css": "/static/css/main.083748f4.css",
+    "main.js": "/static/js/main.d2f3a9af.js",
     "static/media/kfc.png": "/static/media/kfc.83080806dd43ae59dafa.png",
     "static/media/bathandbodyworks.png": "/static/media/bathandbodyworks.9fe3234e914a008f8923.png",
+    "static/media/beautiva.png": "/static/media/beautiva.6523f34cc5049ea4e44f.png",
     "static/media/youtube.png": "/static/media/youtube.fe5943c8ec43b20214d6.png",
     "static/media/geekbuying.png": "/static/media/geekbuying.d735aef455e2dc342c7d.png",
     "static/media/self.png": "/static/media/self.b9b2989bda8488afa438.png",
@@ -20,11 +21,11 @@
     "static/media/expressjs.svg": "/static/media/expressjs.632d3c32e6c8f71f7f7faf4fb71b945b.svg",
     "index.html": "/index.html",
     "static/media/js.svg": "/static/media/js.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.1946e6ed.css.map": "/static/css/main.1946e6ed.css.map",
-    "main.d8047f3b.js.map": "/static/js/main.d8047f3b.js.map"
+    "main.083748f4.css.map": "/static/css/main.083748f4.css.map",
+    "main.d2f3a9af.js.map": "/static/js/main.d2f3a9af.js.map"
   },
   "entrypoints": [
-    "static/css/main.1946e6ed.css",
-    "static/js/main.d8047f3b.js"
+    "static/css/main.083748f4.css",
+    "static/js/main.d2f3a9af.js"
   ]
 }

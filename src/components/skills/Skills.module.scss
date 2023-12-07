@@ -1,3 +1,10 @@
-.skillsets{
-    position:relative;
+.skillsets {
+  position: relative;
+}
+.skillContent {
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(7, 7, 7, 0.575);
+  }
 }

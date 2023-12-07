@@ -1,15 +1,35 @@
-.projecticon{
-    display:flex;
+@import "../../variables.module.scss";
+
+.portfolioBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 25px;
+  padding: 2rem 1rem;
+  margin: 1rem;
+  max-width: 400px;
+  max-height: 650px;
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(7, 7, 7, 0.575);
+  }
 }
-.projectDesc{
-    padding:2rem;
-    font-size:18px;
+
+.projecticon {
+  display: flex;
 }
-@media all and (max-width:480px){
-    .projecticon{
-        display:none
-    }
-    .projectDesc{
-        display:none
-    }
+.projectDesc {
+  padding: 2rem;
+  font-size: 18px;
+  max-height: 200px;
+}
+@media all and (max-width: 480px) {
+  .projecticon {
+    display: none;
+  }
+  .projectDesc {
+    display: none;
+  }
 }
